@@ -1,0 +1,1186 @@
+/* =================== COMBINED FROM style.css =================== */
+/* ===================
+   ESTILOS GERAIS E FUNDO
+=================== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f0f2f5; /* fundo inspirado no Build 1.2 */
+  color: #333;
+}
+
+/* ===================
+   CONTAINER PADRÃO
+=================== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===================
+   CABEÇALHO COM LOGO
+=================== */
+header {
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.logo img {
+  height: 60px;
+  cursor: pointer;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #004080;
+  font-weight: bold;
+}
+
+/* ===================
+   CARROSSEL COM SETAS
+=================== */
+.carrossel {
+  position: relative;
+  overflow: hidden;
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.slides img {
+  width: 100%;
+  flex-shrink: 0;
+}
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* ===================
+   SEÇÃO SOBRE
+=================== */
+.sobre {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px 40px;
+  background-color: #fff;
+}
+.sobre .texto {
+  flex: 1;
+}
+.sobre .imagem {
+  flex: 1;
+}
+.sobre .imagem img {
+  width: 40%;
+  border-radius: 8px;
+}
+
+/* ===================
+   GALERIA EM 6 COLUNAS
+=================== */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 20px;
+  background-color: #fdfdfd;
+}
+.galeria .item img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ===================
+   DOAÇÃO
+=================== */
+.doacao {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  background-color: #fff;
+  padding: 40px 20px;
+}
+.texto-doacao {
+  flex: 2;
+}
+.meios-doacao {
+  flex: 1;
+}
+
+/* ===================
+   RODAPÉ
+=================== */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ===================
+   RESPONSIVO
+=================== */
+@media (max-width: 768px) {
+  .container, .sobre, .doacao {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav { font-size: 20px; }
+}
+
+/* Estilos gerais */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f8fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Entre em Contato Conosco */
+.contato-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.contato-container h2 {
+  color: #1877f2;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.contato-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 28px;
+  color: #222;
+}
+
+.contato-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 48px 24px 36px 24px;
+  margin: 0 auto;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+  max-width: 900px;
+  font-size: 1.08rem;
+  color: #222;
+}
+
+.contato-card > div {
+  margin-bottom: 18px;
+}
+
+.contato-card a {
+  color: #1877f2;
+  text-decoration: none;
+}
+
+.contato-social-title {
+  margin: 24px 0 10px 0;
+  color: #222;
+}
+
+.contato-social-btns {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.contato-btn {
+  background: #1877f2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 28px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.contato-btn:hover {
+  background: #145fc6;
+}
+
+.contato-btn.facebook { background: #1877f2; }
+.contato-btn.instagram { background: #1877f2; }
+.contato-btn.linkedin { background: #1877f2; }
+
+/* Doação por PIX */
+.pix-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 36px 16px 32px 16px;
+  max-width: 420px;
+  margin: 40px auto;
+  text-align: center;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+}
+
+.pix-container h2 {
+  font-weight: 700;
+  color: #444;
+  font-size: 2rem;
+  margin-bottom: 18px;
+}
+
+.pix-desc {
+  font-size: 1.12rem;
+  margin-bottom: 18px;
+  color: #222;
+}
+
+.pix-qrcode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.pix-qrcode img {
+  width: 200px;
+  height: 200px;
+  border: 3px solid #1877f2;
+  border-radius: 8px;
+  background: #f5f6fa;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+
+.pix-qrcode-label {
+  color: #222;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.pix-chaves {
+  margin-bottom: 14px;
+}
+
+.pix-chave {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #1877f2;
+  margin-bottom: 4px;
+}
+
+.pix-chave-destaque {
+  font-weight: 900;
+  color: #1877f2;
+}
+
+.pix-tipo {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.pix-agradecimento {
+  color: #444;
+  font-size: 1.02rem;
+  margin-top: 6px;
+}
+/* =================== COMBINED FROM doacao.css =================== */
+/* Estilos gerais */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f8fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Entre em Contato Conosco */
+.contato-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.contato-container h2 {
+  color: #1877f2;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.contato-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 28px;
+  color: #222;
+}
+
+.contato-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 48px 24px 36px 24px;
+  margin: 0 auto;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+  max-width: 900px;
+  font-size: 1.08rem;
+  color: #222;
+}
+
+.contato-card > div {
+  margin-bottom: 18px;
+}
+
+.contato-card a {
+  color: #1877f2;
+  text-decoration: none;
+}
+
+.contato-social-title {
+  margin: 24px 0 10px 0;
+  color: #222;
+}
+
+.contato-social-btns {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.contato-btn {
+  background: #1877f2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 28px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.contato-btn:hover {
+  background: #145fc6;
+}
+
+.contato-btn.facebook { background: #1877f2; }
+.contato-btn.instagram { background: #1877f2; }
+.contato-btn.linkedin { background: #1877f2; }
+
+/* Doação por PIX */
+.pix-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 36px 16px 32px 16px;
+  max-width: 420px;
+  margin: 40px auto;
+  text-align: center;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+}
+
+.pix-container h2 {
+  font-weight: 700;
+  color: #444;
+  font-size: 2rem;
+  margin-bottom: 18px;
+}
+
+.pix-desc {
+  font-size: 1.12rem;
+  margin-bottom: 18px;
+  color: #222;
+}
+
+.pix-qrcode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.pix-qrcode img {
+  width: 200px;
+  height: 200px;
+  border: 3px solid #1877f2;
+  border-radius: 8px;
+  background: #f5f6fa;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+
+.pix-qrcode-label {
+  color: #222;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.pix-chaves {
+  margin-bottom: 14px;
+}
+
+.pix-chave {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #1877f2;
+  margin-bottom: 4px;
+}
+
+.pix-chave-destaque {
+  font-weight: 900;
+  color: #1877f2;
+}
+
+.pix-tipo {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.pix-agradecimento {
+  color: #444;
+  font-size: 1.02rem;
+  margin-top: 6px;
+}
+
+.footer-contato {
+  background: #3a4758;
+  color: #fff;
+  padding: 38px 0 16px 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 1.14rem;
+}
+
+.footer-contato-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 1400px;
+  margin: 0 auto 28px auto;
+}
+
+.footer-contato-col {
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 22px;
+}
+
+.footer-logo-col {
+  align-items: center;
+  gap: 18px;
+}
+
+.footer-logo {
+  max-width: 180px;
+  height: auto;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.footer-contato-redes {
+  display: flex;
+  gap: 20px;
+  margin-top: 4px;
+}
+
+.footer-contato-redes a svg {
+  fill: #fff;
+  transition: fill 0.2s;
+}
+.footer-contato-redes a:hover svg {
+  fill: #ffcd38;
+}
+
+.footer-contato-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.08rem;
+  line-height: 1.3;
+}
+.footer-contato-item a {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.footer-contato-item a:hover {
+  color: #ffcd38;
+}
+
+.footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+}
+
+.footer-contato-bottom {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 14px;
+  opacity: 0.95;
+}
+
+@media (max-width: 900px) {
+  .footer-contato-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+  .footer-contato-col {
+    align-items: center;
+    text-align: center;
+  }
+}
+.cabecalho {
+  background: #fff;
+  box-shadow: 0 1px 8px rgba(60,60,60,0.03);
+  position: relative;
+  z-index: 9;
+  padding: 0;
+}
+
+/* Linha charmosa inferior */
+.cabecalho::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 7px; /* Espessura da linha */
+  background: linear-gradient(90deg, #134586 0%, #050f3b 100%);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 0 0 7px 7px;
+  box-shadow: 0 2px 12px rgba(24,119,242,0.13);
+}
+
+.cabecalho .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 16px 20px 12px 20px;
+}
+
+.logo img {
+  height: 56px;
+  width: auto;
+  display: block;
+}
+
+.cabecalho nav ul {
+  list-style: none;
+  display: flex;
+  gap: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+.cabecalho nav ul li a {
+  color: #1d3557;
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 500;
+  transition: color 0.2s;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.cabecalho nav ul li a:hover,
+.cabecalho nav ul li a:focus {
+  color: #1877f2;
+  border-bottom: 2px solid #1877f2;
+}
+
+@media (max-width: 768px) {
+  .cabecalho .container {
+    flex-direction: column;
+    gap: 16px;
+    padding: 12px 8px 10px 8px;
+  }
+  .logo img {
+    height: 44px;
+  }
+  .cabecalho nav ul {
+    gap: 24px;
+  }
+}
+
+.noticias-instagram {
+  background: #f7f8fa;
+  padding: 48px 0 32px 0;
+  text-align: center;
+}
+.noticias-instagram h2 {
+  font-size: 2.1rem;
+  color: #1d3557;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.noticias-instagram h2 span {
+  border-bottom: 4px solid #1877f2;
+  padding-bottom: 3px;
+}
+.insta-feed {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: center;
+}
+.insta-post {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(60,60,60,0.07);
+  width: 220px;
+  text-decoration: none;
+  color: #222;
+  transition: box-shadow 0.2s;
+}
+.insta-post:hover {
+  box-shadow: 0 6px 24px rgba(24,119,242,0.13);
+}
+.insta-post img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  display: block;
+}
+.insta-caption {
+  display: block;
+  padding: 12px 10px;
+  font-size: 1rem;
+  color: #444;
+  text-align: left;
+}
+
+/* Responsivo */
+@media (max-width: 700px) {
+  .insta-feed {
+    gap: 14px;
+  }
+  .insta-post {
+    width: 48vw;
+    min-width: 140px;
+  }
+}
+.carousel-apresentacao {
+  position: relative;
+  width: 100%;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f8fa;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9);
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.carousel-texto {
+  position: relative;
+  z-index: 1;
+  background: rgba(255,255,255,0.92);
+  border-radius: 18px;
+  max-width: 670px;
+  margin: 0 auto;
+  padding: 38px 30px;
+  text-align: center;
+  box-shadow: 0 2px 32px rgba(30,30,30,0.10);
+}
+
+.carousel-texto h2 {
+  font-size: 2.1rem;
+  color: #111;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.btn-doacao {
+  display: inline-block;
+  margin-top: 8px;
+  background: linear-gradient(90deg, #1877f2 60%, #ffcd38 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 10px 36px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 10px rgba(24,119,242,0.12);
+}
+.btn-doacao:hover {
+  background: linear-gradient(90deg, #1254a7 60%, #e1b10a 100%);
+  color: #fff;
+}
+
+.noticias-instagram {
+  background: #f7f8fa;
+  padding: 48px 0 32px 0;
+  text-align: center;
+}
+.noticias-instagram h2 {
+  font-size: 2.1rem;
+  color: #1d3557;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.noticias-instagram h2 span {
+  border-bottom: 4px solid #1877f2;
+  padding-bottom: 3px;
+}
+.insta-feed {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: center;
+}
+.insta-post {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(60,60,60,0.07);
+  width: 220px;
+  text-decoration: none;
+  color: #222;
+  transition: box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+.insta-post:hover {
+  box-shadow: 0 6px 24px rgba(24,119,242,0.13);
+}
+.insta-post img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  display: block;
+}
+.insta-caption {
+  display: block;
+  padding: 12px 10px;
+  font-size: 1rem;
+  color: #444;
+  text-align: left;
+  min-height: 48px;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .carousel-texto h2 {
+    font-size: 1.3rem;
+  }
+  .carousel-texto {
+    padding: 20px 14px;
+  }
+  .insta-feed {
+    gap: 14px;
+  }
+  .insta-post {
+    width: 48vw;
+    min-width: 140px;
+  }
+}
+.sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;    /* Centraliza todo o conteúdo no meio horizontal */
+  gap: 48px;                  /* Espaçamento entre texto e imagem */
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 56px 16px;
+}
+
+.sobre .texto {
+  flex: 1 1 0;
+  text-align: left;
+}
+
+.sobre .texto h2 {
+  font-size: 2rem;
+  color: #1877f2;
+  margin-bottom: 18px;
+}
+
+.sobre .texto p {
+  font-size: 1.18rem;
+  color: #222;
+}
+
+.sobre .imagem {
+  flex: 1 1 0;
+  display: flex;
+  justify-content: center;
+}
+
+.sobre .imagem img {
+  max-width: 380px;
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(24,119,242,0.09);
+}
+
+@media (max-width: 900px) {
+  .sobre {
+    flex-direction: column;
+    gap: 28px;
+    text-align: center;
+  }
+  .sobre .texto {
+    text-align: center;
+  }
+}
+
+.doacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 56px 16px;
+  flex-wrap: wrap;
+}
+
+.texto-doacao {
+  flex: 1 1 300px;
+  min-width: 270px;
+  text-align: left;
+}
+
+.texto-doacao h2 {
+  font-size: 2rem;
+  color: #1877f2;
+  margin-bottom: 18px;
+}
+
+.texto-doacao p {
+  font-size: 1.18rem;
+  color: #222;
+}
+
+.meios-doacao {
+  flex: 1 1 340px;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.pix-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px 18px 28px 18px;
+  max-width: 410px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 2px 16px rgba(24,119,242,0.09);
+}
+
+.pix-container h2 {
+  font-weight: 700;
+  color: #444;
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+}
+
+.pix-desc {
+  font-size: 1.09rem;
+  margin-bottom: 14px;
+  color: #222;
+}
+
+.pix-qrcode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.pix-qrcode img {
+  width: 180px;
+  height: 180px;
+  border: 3px solid #1877f2;
+  border-radius: 8px;
+  background: #f5f6fa;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+
+.pix-qrcode-label {
+  color: #222;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.pix-chaves {
+  margin-bottom: 8px;
+}
+
+.pix-chave {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #1877f2;
+  margin-bottom: 4px;
+}
+
+.pix-chave-destaque {
+  font-weight: 900;
+  color: #1877f2;
+}
+
+.pix-tipo {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  .doacao {
+    flex-direction: column;
+    gap: 28px;
+    text-align: center;
+  }
+  .texto-doacao {
+    text-align: center;
+  }
+  .meios-doacao {
+    justify-content: center;
+  }
+}
+
+.carousel-apresentacao {
+  position: relative;
+  width: 100%;
+  height: 400px; /* ajuste conforme a altura real das imagens */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: none; /* Mostre apenas o slide ativo no seu JS do carrossel */
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Exemplo: exiba o slide ativo (ajuste conforme seu JS) */
+.carousel-slide.ativo {
+  display: flex;
+}
+
+/* Botão centralizado sobre a imagem do Slide 2 */
+.btn-doacao-slide2 {
+  position: absolute;
+  left: 50%;
+  top: 54%; /* ajuste para alinhar ao ponto marcado em vermelho */
+  transform: translate(-50%, -50%);
+  background: linear-gradient(90deg, #1877f2 60%, #ffcd38 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.18rem;
+  padding: 14px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(24,119,242,0.12);
+  transition: background 0.2s, box-shadow 0.2s;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.btn-doacao-slide2:hover {
+  background: linear-gradient(90deg, #1254a7 60%, #e1b10a 100%);
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .carousel-apresentacao {
+    height: 220px;
+  }
+  .btn-doacao-slide2 {
+    font-size: 1rem;
+    padding: 10px 24px;
+  }
+}
+
+.carousel-apresentacao {
+  position: relative;
+  width: 100%;
+  height: 400px; /* ajuste para altura real das imagens */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Cada slide ocupa todo o espaço e é relativo para posicionar elementos filhos */
+.carousel-slide {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: none; /* Mostre o slide ativo no seu JS do carrossel */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Exemplo: exiba o slide ativo (ajuste conforme seu JS) */
+.carousel-slide.ativo {
+  display: flex;
+}
+
+/* Imagem ocupa todo o slide */
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Botão centralizado sobre a imagem do Slide 2 */
+.btn-doacao-slide2 {
+  position: absolute;
+  left: 50%;
+  top: 54%; /* ajuste este valor para alinhar ao centro visual desejado */
+  transform: translate(-50%, -50%);
+  background: linear-gradient(90deg, #1877f2 60%, #ffcd38 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.18rem;
+  padding: 14px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(24,119,242,0.12);
+  transition: background 0.2s, box-shadow 0.2s;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.btn-doacao-slide2:hover {
+  background: linear-gradient(90deg, #1254a7 60%, #e1b10a 100%);
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .carousel-apresentacao {
+    height: 220px;
+  }
+  .btn-doacao-slide2 {
+    font-size: 1rem;
+    padding: 10px 24px;
+  }
+}
+
+.carrossel {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-doacao-slide2 {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(90deg, #1877f2 60%, #ffcd38 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.18rem;
+  padding: 14px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(24,119,242,0.12);
+  z-index: 10;
+}
+
+.slides img:nth-child(2) ~ .btn-doacao-slide2 {
+  display: none; /* segurança extra se estiver dentro do DOM errado */
+}
+
+/* Mostrar o botão apenas quando o segundo slide estiver ativo */
+.slides {
+  position: relative;
+}
+.slides img:nth-child(2):not([style*="display: none"]) ~ .btn-doacao-slide2 {
+  display: block;
+}
+
+/* Botão de Pagamento no Slide (ajustado) */
+.payment-button-wrapper {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.payment-button {
+  background-color: #d72a2a;
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+
+.payment-button:hover {
+  background-color: #b71c1c;
+}

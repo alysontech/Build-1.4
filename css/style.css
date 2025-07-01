@@ -1,0 +1,307 @@
+/* ===================
+   ESTILOS GERAIS E FUNDO
+=================== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f0f2f5; /* fundo inspirado no Build 1.2 */
+  color: #333;
+}
+
+/* ===================
+   CONTAINER PADRÃO
+=================== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===================
+   CABEÇALHO COM LOGO
+=================== */
+header {
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.logo img {
+  height: 60px;
+  cursor: pointer;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #004080;
+  font-weight: bold;
+}
+
+/* ===================
+   CARROSSEL COM SETAS
+=================== */
+.carrossel {
+  position: relative;
+  overflow: hidden;
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.slides img {
+  width: 100%;
+  flex-shrink: 0;
+}
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* ===================
+   SEÇÃO SOBRE
+=================== */
+.sobre {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px 40px;
+  background-color: #fff;
+}
+.sobre .texto {
+  flex: 1;
+}
+.sobre .imagem {
+  flex: 1;
+}
+.sobre .imagem img {
+  width: 40%;
+  border-radius: 8px;
+}
+
+/* ===================
+   GALERIA EM 6 COLUNAS
+=================== */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 20px;
+  background-color: #fdfdfd;
+}
+.galeria .item img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ===================
+   DOAÇÃO
+=================== */
+.doacao {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  background-color: #fff;
+  padding: 40px 20px;
+}
+.texto-doacao {
+  flex: 2;
+}
+.meios-doacao {
+  flex: 1;
+}
+
+/* ===================
+   RODAPÉ
+=================== */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ===================
+   RESPONSIVO
+=================== */
+@media (max-width: 768px) {
+  .container, .sobre, .doacao {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav { font-size: 20px; }
+}
+
+/* Estilos gerais */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f8fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Entre em Contato Conosco */
+.contato-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.contato-container h2 {
+  color: #1877f2;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.contato-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 28px;
+  color: #222;
+}
+
+.contato-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 48px 24px 36px 24px;
+  margin: 0 auto;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+  max-width: 900px;
+  font-size: 1.08rem;
+  color: #222;
+}
+
+.contato-card > div {
+  margin-bottom: 18px;
+}
+
+.contato-card a {
+  color: #1877f2;
+  text-decoration: none;
+}
+
+.contato-social-title {
+  margin: 24px 0 10px 0;
+  color: #222;
+}
+
+.contato-social-btns {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.contato-btn {
+  background: #1877f2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 28px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.contato-btn:hover {
+  background: #145fc6;
+}
+
+.contato-btn.facebook { background: #1877f2; }
+.contato-btn.instagram { background: #1877f2; }
+.contato-btn.linkedin { background: #1877f2; }
+
+/* Doação por PIX */
+.pix-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 36px 16px 32px 16px;
+  max-width: 420px;
+  margin: 40px auto;
+  text-align: center;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+}
+
+.pix-container h2 {
+  font-weight: 700;
+  color: #444;
+  font-size: 2rem;
+  margin-bottom: 18px;
+}
+
+.pix-desc {
+  font-size: 1.12rem;
+  margin-bottom: 18px;
+  color: #222;
+}
+
+.pix-qrcode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.pix-qrcode img {
+  width: 200px;
+  height: 200px;
+  border: 3px solid #1877f2;
+  border-radius: 8px;
+  background: #f5f6fa;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+
+.pix-qrcode-label {
+  color: #222;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.pix-chaves {
+  margin-bottom: 14px;
+}
+
+.pix-chave {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #1877f2;
+  margin-bottom: 4px;
+}
+
+.pix-chave-destaque {
+  font-weight: 900;
+  color: #1877f2;
+}
+
+.pix-tipo {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.pix-agradecimento {
+  color: #444;
+  font-size: 1.02rem;
+  margin-top: 6px;
+}
